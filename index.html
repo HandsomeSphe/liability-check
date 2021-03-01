@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <title>Liability check </title>
+         <meta charset="UTF-8">
+         <link type="text/css"  rel="stylesheet" href="./sass/style.css">
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper  clearfix">
+            <div class="top">
+
+                <div class="top__heading">
+                    <svg class="top__heading--icon">
+                        <use xlink:href="./images/SVG/sprite.svg#icon-leaf"></use>
+                    </svg>
+                    <div class="top__heading--text">LIABILITY CHECK</div>
+                </div>
+
+                <div class="top__description">
+                    <input class="top__description--actual" type="text" placeholder="description" maxlength="18">
+                    <input class="top__description--number" type="number" placeholder="No.">
+
+               
+                </div>
+
+                <div class="top__value">
+                    <input class="top__value--actual" type="number" placeholder="price" >
+                </div>
+                  
+            </div>
+
+            <!-----//////////////////////////////BOTTOM ///////////////////////////-->
+
+            <div class="bottom">
+
+                <div class="total">
+                    <div class="total__heading">Your total</div>
+                    <div class="total__output"></div>
+                </div>
+
+               <div class="list">
+                   <div class="box">
+                           <ul class="myList">
+                               <!---
+                                <li>
+                                    <div class="sorter  sorter-number"> 
+                                         <div class="listi__amount">2</div>
+                                         <div class="listi__description">cheese burgers</div>
+                                         <div class="listi__price">R 15</div>
+                                         <svg class="listi__icon">
+                                           <use xlink:href="./images/SVG/sprite.svg#icon-bin"></use>
+                                         </svg>
+                                    </div>
+                               </li>
+                            -->
+                       
+                           
+                           </ul>
+                   </div>               
+                </div>
+
+                <!-----//////////// progress bar-->
+                <div class="progress">
+                    <div class="progress__percentage">0%</div>
+                    <div class="progress__text">reduced</div>
+                </div>           
+           
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
