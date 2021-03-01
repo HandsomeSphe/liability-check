@@ -1,0 +1,95 @@
+.bottom{
+    width:922.5px;
+    max-height:24.85rem;
+    flex:1;
+    background-image:url("./money-2696219_1920\ 1.jpg");
+    background-size:75%;
+    background-repeat:no-repeat;
+
+    display:flex;
+
+}
+.total{
+    width:15rem;
+    height:auto;
+    flex:0 0 28%;
+    padding-top:11rem;
+    padding-left:2rem;
+
+    &__output{
+        width:12rem;
+        height:2rem;
+        background-color:rgba(196, 196, 196,.3);
+        text-align:center;
+        color:#ffff;
+        font-weight:300;
+    
+    }
+    &__heading{
+        color:#C4C4C4;
+        font-family:inherit;
+        font-weight:300;
+        font-size:20px;
+        margin-bottom:.5rem;
+    }
+
+}
+.list{
+    width:5rem;
+    height:auto;
+    flex:0 0 47%;
+    padding-left:1.5rem;
+}
+.box{
+    width:83%;
+    height:15rem;
+    border:1px solid #C4C4C4;
+    margin:2rem auto;
+    overflow:hidden;
+    scroll-behavior: auto;
+}
+.myList{
+    padding:.3rem;
+}
+.sorter{
+    width:98%;
+    height:2.5rem;
+    margin-bottom:.2rem;
+    border-bottom:1px solid  white;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    text-align:center;
+
+}
+.listi{
+    
+    &__amount{
+        @include  lister;
+        margin-right:1rem;
+    }
+    &__description{
+        @include lister;
+       // margin-right:3rem;
+       width:75%;
+       text-align:left;
+    }
+    &__price{
+        @include lister;
+        margin-right:1rem;
+    }
+    &__icon{
+        padding:0;
+        margin:0;
+        width:1.1rem;
+        height:1rem;
+        fill:#fff;
+        cursor:pointer;
+        transition:all .4s;
+        
+        &:hover{
+            transform:translateX(.1rem);
+            fill:darkgreen;
+        }
+    }
+}

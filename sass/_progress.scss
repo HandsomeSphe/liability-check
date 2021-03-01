@@ -1,0 +1,28 @@
+.progress{
+    width:14rem;
+    height:14rem;
+    border:1rem solid rgba(0,0,0,.5);
+    border-radius:50%;
+    position:absolute;
+    top:40%;
+    left:20%;
+    transform:translate(-50%, -50%);
+
+    &__text{
+        position:absolute;
+        top:65%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        font-size:1.1rem;
+    }
+    &__percentage{
+        position:absolute;
+        top:45%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        font-size:1.3rem;
+    }
+}
+
+
+
